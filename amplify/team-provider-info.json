@@ -1,0 +1,15 @@
+{
+    "test": {
+        "awscloudformation": {
+            "AuthRoleName": "amplify-ajisaqticketing-test-92612-authRole",
+            "UnauthRoleArn": "arn:aws:iam::367770468775:role/amplify-ajisaqticketing-test-92612-unauthRole",
+            "AuthRoleArn": "arn:aws:iam::367770468775:role/amplify-ajisaqticketing-test-92612-authRole",
+            "Region": "us-east-2",
+            "DeploymentBucketName": "amplify-ajisaqticketing-test-92612-deployment",
+            "UnauthRoleName": "amplify-ajisaqticketing-test-92612-unauthRole",
+            "StackName": "amplify-ajisaqticketing-test-92612",
+            "StackId": "arn:aws:cloudformation:us-east-2:367770468775:stack/amplify-ajisaqticketing-test-92612/d68104d0-5483-11ea-af60-0681d34c9248",
+            "AmplifyAppId": "d1j3pc7uug2gjn"
+        }
+    }
+}

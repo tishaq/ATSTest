@@ -1,0 +1,64 @@
+type TicketPool @model {
+  id: String!
+  agent: Agent! @connection(name: "TicketPoolAgent")
+  device: Device! @connection(name: "TicketPoolDevice")
+  ticketType: String!
+  location: String!
+  itemName: String!
+  quantity: Int
+  payerName: String
+  fee: Float!
+  date: String!
+  timeStamp: String!
+}
+type Payment @model {
+  id: String!
+  transactionId: String!
+  taxId: String!
+  billRef: String!
+  date: String!
+  totalAmount: Float!
+  agent: Agent! @connection(name: "PaymentAgent")
+}
+type Agent @model {
+  id: String!
+  name: String!
+  user: User! @connection(name: "UserAgents")
+  device: Device @connection(name: "AgentDevice")
+  ticketPool: [TicketPool] @connection(name: "TicketPoolAgent")
+  payment: [Payment] @connection(name: "PaymentAgent")
+  email: String
+  password: String!
+  initialWallet: Float!
+  nin: String
+}
+type User @model {
+  id: String!
+  name: String!
+  agent: [Agent] @connection(name: "UserAgents")
+  userName: String!
+  email: String!
+  password: String!
+  phone: String!
+}
+type Device @model {
+  id: String!
+  agent: Agent! @connection(name: "AgentDevice")
+  macAddress: String!
+  ticketPool: [TicketPool] @connection(name: "TicketPoolDevice")
+  ticketSetting: [TicketSetting] @connection(name: "TicketSettingDevice")
+  type: String!
+  location: String!
+  state: String!
+  lga: String!
+}
+type TicketSetting @model {
+  id: String!
+  taxId: String!
+  device: Device! @connection(name: "TicketSettingDevice")
+  reciptType: String!
+  itemName: String!
+  fee: Float!
+  withQuantity: Boolean!
+  withName: Boolean!
+}

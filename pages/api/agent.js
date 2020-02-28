@@ -3,14 +3,14 @@ import { API, graphqlOperation } from "aws-amplify";
 import Amplify from "aws-amplify";
 import configuration from "../../src/aws-exports";
 import sha from "js-sha512";
-Amplify.configure(configuration);
-//{
-//   aws_appsync_graphqlEndpoint: process.env.REACT_APP_appsync_graphqlEndpoint,
-//   aws_appsync_region: process.env.REACT_APP_appsync_region,
-//   aws_appsync_authenticationType:
-//     process.env.REACT_APP_appsync_authenticationType,
-//   aws_appsync_apiKey: process.env.REACT_APP_appsync_apiKey
-// });
+//Amplify.configure(configuration);
+Amplify.configure({
+  aws_appsync_graphqlEndpoint: process.env.REACT_APP_appsync_graphqlEndpoint,
+  aws_appsync_region: process.env.REACT_APP_appsync_region,
+  aws_appsync_authenticationType:
+    process.env.REACT_APP_appsync_authenticationType,
+  aws_appsync_apiKey: process.env.REACT_APP_appsync_apiKey
+});
 
 export default async (req, res) => {
   let raw = {};

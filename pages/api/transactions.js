@@ -41,7 +41,7 @@ export default async (req, res) => {
           })
         );
       } catch (errors) {
-        console.log(error);
+        console.log(errors);
       }
       if (raw.data !== null && raw.data.getUser.userName === userName) {
         do {

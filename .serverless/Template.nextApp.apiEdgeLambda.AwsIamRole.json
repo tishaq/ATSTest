@@ -1,0 +1,12 @@
+{
+  "name": "a26njlh-dvgs6zd",
+  "arn": "arn:aws:iam::367770468775:role/a26njlh-dvgs6zd",
+  "service": [
+    "lambda.amazonaws.com",
+    "edgelambda.amazonaws.com"
+  ],
+  "policy": {
+    "arn": "arn:aws:iam::aws:policy/service-role/AWSLambdaBasicExecutionRole"
+  },
+  "region": "us-east-1"
+}

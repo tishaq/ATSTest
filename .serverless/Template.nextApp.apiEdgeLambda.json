@@ -1,0 +1,17 @@
+{
+  "name": "a26njlh-x7cnm4x",
+  "hash": "UMgV5UybdW8hBGkyKk/ftJf9QaraCQK8FzD+UEfxNSM=",
+  "description": "API Lambda@Edge for Next CloudFront distribution",
+  "memory": 512,
+  "timeout": 10,
+  "code": "/home/ahmedt/ajisaq/ajisaqTicketingTest/ajisaqticketingtest/.serverless_nextjs/api-lambda",
+  "shims": [],
+  "handler": "index.handler",
+  "runtime": "nodejs10.x",
+  "env": {},
+  "role": {
+    "arn": "arn:aws:iam::367770468775:role/a26njlh-dvgs6zd"
+  },
+  "arn": "arn:aws:lambda:us-east-1:367770468775:function:a26njlh-x7cnm4x",
+  "region": "us-east-1"
+}

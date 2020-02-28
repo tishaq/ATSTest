@@ -1,0 +1,1 @@
+{"apis":{"dynamic":{},"nonDynamic":{"/api/agent":"pages/api/agent.js","/api/device":"pages/api/device.js","/api/tickets":"pages/api/tickets.js","/api/transactions":"pages/api/transactions.js"}}}
